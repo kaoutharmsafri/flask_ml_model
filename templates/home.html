@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href='/static/style.css' />
+      <title>Profit Prediction</title>
+    </head>
+    <body>
+      <div style="text-align:center">
+        <a href="https://github.com/kaoutharmsafri/flask_ml_model.git"><img src="/static/github.png" alt="Logo de l'entreprise" style="float:left; margin-right:10px;width: 30px;    height: 30px;
+        "></a>
+        <h1><font color="#765836">Profit prediction from Startup spendings</font></h1>
+    </div>     
+    <hr color=#765836>
+    </br>
+    <h3><div style="text-align:center">Enter the values for spendings, R&D spendings, Administration spendings and Marketing spendings</div></h3>
+    </br>
+    <div class='container'>
+          <form method="POST" action="/predict" >
+            <div class="form-group">
+              <label class="label"><p class="font-weight-bold">Select a state :</p></label>
+              <div class="row">
+                  <div class="col-md-4">
+                      <input type="radio" id="NewYork" name="state" value="NewYork">
+                      <label for="NewYork"><p class="font-weight-bold">New York</p></label>
+                  </div>
+                  <div class="col-md-4">
+                      <input type="radio" id="California" name="state" value="California">
+                      <label for="California"><p class="font-weight-bold">California</p></label>
+                  </div>
+                  <div class="col-md-4">
+                      <input type="radio" id="Florida" name="state" value="Florida">
+                      <label for="Florida"><p class="font-weight-bold">Florida</p></label>
+                  </div>
+              </div>
+          </div>    
+                  <div class="form-group">
+                    <label class="label" for="RnD_Spend"><p class="font-weight-bold">Research and Development Spendings</p></label>
+                    <input type="text" name="RnD_Spend"> $
+                    </div>
+
+                    <div class="form-group">
+                      <label class="label" for="Admin_Spend"><p class="font-weight-bold">Administration Spendings</p></label>
+                      <input type="text" name="Admin_Spend"> $
+                      </div>
+
+                      <div class="form-group">
+                        <label class="label" for="Market_Spend"><p class="font-weight-bold">Marketing spendings</p></label>
+                        <input type="text" name="Market_Spend"> $
+                        </div>
+<br>
+<br>
+                        <input class='button-17' type='submit' value='Predict'>
+            </form>
+
+          </div>
+          </div>
+          </div>
+    </body>
+    <footer>
+      <div class="footer-images">
+        <img src="/static/logo_fsjes.png" alt="image1">
+        <img src="/static/logo.PNG" alt="image2">
+        <img src="/static/logo_uae.png" alt="image3">
+      </div>
+    </footer>
+</html>

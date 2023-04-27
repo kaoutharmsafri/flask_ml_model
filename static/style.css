@@ -1,0 +1,113 @@
+body{
+    font-family: Verdana, Geneva, sans-serif;
+    background-image: url("/static/background-image.jpg");
+}
+form{
+    font-size:20px;
+}
+.label{
+    font-weight: bold;
+}
+input[type=text]{
+    background-color: transparent;
+    border: none;
+    width: 50%;
+    border-bottom: 2px solid #765836;
+    font-size:20px;
+
+  }
+input[type=text]:focus {
+    background-color: #c8b78e;
+    border: none;
+    width: 50%;
+    height: 0.7cm;
+    font-size:20px;
+
+  }
+.button-17 {
+  align-items: center;
+  appearance: none;
+  background-color: #efe3c8;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 30%;
+  will-change: transform,opacity;
+  z-index: 0;
+  color: #765836;
+  font-weight: bold;
+  font-size:20px;
+
+}
+
+.button-17:hover {
+  background: #F6F9FE;
+  outline: none;
+  border: 2px solid #765836;
+}
+.container{
+    backdrop-filter: blur(2px);
+}
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #765836;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+  /* Style for the circle */
+  input[type=radio]::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #765836;
+    background-color: #fff;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+input[type="radio"]:checked::before {
+    
+    background-color: #765836;
+}
+
+/* Display radio buttons inline */
+input[type="radio"] + label {
+    display: inline-block;
+}
+.footer-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-images img {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+  }
